@@ -1,4 +1,140 @@
 /* Add screen styles below */
-a.active {
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --main-bg-color: #E9E9E9;
+    --primary-text-color: #424242;
+    --accent-color: #ff3f3c;
+}
+
+body {
+    background: var(--main-bg-color);
+    color:  var(--primary-text-color);
+    font-family: "inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+main {
+    background: url('polaroid.png') no-repeat center 100px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.hero {
+    text-align: center;
+    min-height: 800px;
+}
+
+.hero h2 {
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.details h3 {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: bolder;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.details p {
+    text-align: justify;
+    vertical-align: middle;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.know {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: bolder;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0 0 0 60px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.details ul li.wifi {
+    background: url('wifi-solid 1.svg') no-repeat center left;
+    background-size: 30px 30px;
+    margin: 0 0 0 160px;
+}   
+
+.details ul li.cloud {
+    background: url('cloud-arrow-up-solid 1.svg') no-repeat center left;
+    background-size: 30px 30px;
+    margin: 0 0 0 160px;
+} 
+
+.details ul li.qr {
+    background: url('qrcode-solid 1.svg') no-repeat center left;
+    background-size: 30px 30px;
+    margin: 0 0 0 160px;
+}
+
+.details ul li.share {
+    background: url('photo-film-solid 1.svg') no-repeat center left;
+    background-size: 30px 30px;
+    margin: 0 0 0 160px;
+}
+
+
+.cta form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta input[type="text"] {
+    padding: 15px 20px;
+    font-size: 1em;
+    border: none;
+    width: 300px;
+}
+
+.cta .button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
     font-weight: bold;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.button-bg {
+    position: absolute;
+    top: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 80%;
+    z-index: -1;
+    border-radius: 4px;
+    pointer-events: none;   
 }
